@@ -5,18 +5,16 @@ public class Principal {
         int[] arr2 = {10,15,4,3,44,12,59,23}; 
 
         System.out.println("Arreglos Originales");  
-        Utilerias.imprimirArreglo(arr1);
-        Utilerias.imprimirArreglo(arr2);
+        Utilerias.printArray(arr1);
+        Utilerias.printArray(arr2);
         
-        Insercion.insertionSort(arr1);
-        
-        Seleccion seleccion = new Seleccion();   
-        seleccion.selectionSort(arr2);  
+        Heap.HeapSort(arr1,arr1.length);
+        Bubble.BubbleSort(arr2);
        
              
         System.out.println("Arreglos ordenados");  
-        Utilerias.imprimirArreglo(arr1);
-        Utilerias.imprimirArreglo(arr2);
+        Utilerias.printArray(arr1);
+        Utilerias.printArray(arr2);
         
 
 
@@ -25,7 +23,7 @@ public class Principal {
         System.out.print("Arreglo desordenado: ");
         Utilerias.printArray(array);
         System.out.print("Arreglo ordenado con Quicksort: ");
-        Quicksort.QuickSort(array, 0, 19);
+        Quick.QuickSort(array, 0, 19);
         Utilerias.printArray(array);
     }  
     

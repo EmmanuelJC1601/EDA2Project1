@@ -1,6 +1,6 @@
 public class Bubble{
-    public static int BubbleSort(int arr[]){
-        int cnt=0
+    public static long BubbleSort(int arr[]){
+        long cnt=0L;
         int i;
         int j;
         int n=arr.length-1;

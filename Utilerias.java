@@ -11,6 +11,6 @@ public class Utilerias {
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
+        return 3;
     }
-    return 3;
 }

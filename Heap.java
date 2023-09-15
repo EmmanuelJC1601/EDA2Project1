@@ -2,13 +2,13 @@ public class Heap{
 
     static int heapSize;
 
-    public static int Heapify(int arr[],int i,int size){
+    public static long Heapify(int arr[],int i,int size){
 
         int l = 2 * i + 1;
         int r = 2 * i + 2;
         int largest;
 
-        int cnt=3;
+        long cnt=3L;
 
         if(l <= heapSize && arr[l] > arr[i]){
             largest = l;
@@ -30,18 +30,18 @@ public class Heap{
         return cnt;
     }
     
-    public static int BuildHeap(int arr[],int size){
+    public static long BuildHeap(int arr[],int size){
         heapSize = size - 1;
         int i;
-        int cnt=2;
+        long cnt=2L;
         for(i = (size - 1) / 2; i >= 0; i--){
             cnt+=Heapify(arr, i,size);
         }
         return cnt;
     }
     
-    public static int HeapSort(int arr[],int size){
-        int cnt=BuildHeap(arr,size);
+    public static long HeapSort(int arr[],int size){
+        long cnt=BuildHeap(arr,size);
         int i;
         cnt++;
         for(i=size-1;i>0;i--){

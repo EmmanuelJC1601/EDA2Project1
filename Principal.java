@@ -8,6 +8,7 @@ public class Principal {
         Scanner input = new Scanner(System.in);
         Random random = new Random();
         int opcion;
+        int operaciones;
         
         System.out.println("\t------Bienvenido-----\n"
         +"Se llenar\u00e1 un arreglo del tama\u00f1o dado con valores aleatorios.");
@@ -36,37 +37,37 @@ public class Principal {
                     Utilerias.printArray(array);
                     break;
                 case 2:
-                    Insertion.insertionSort(array);
+                    System.out.println("Operaciones realizadas: "+Insertion.insertionSort(array));
                     System.out.println("Arreglo ordenado: ");
                     Utilerias.printArray(array);
                     break;
                 case 3:
-                    Selection.selectionSort(array);
+                    System.out.println("Operaciones realizadas: "+Selection.selectionSort(array));
                     System.out.println("Arreglo ordenado: ");
                     Utilerias.printArray(array);
                     break;
                 case 4:
-                    Bubble.BubbleSort(array);
+                    System.out.println("Operaciones realizadas: "+Bubble.BubbleSort(array));
                     System.out.println("Arreglo ordenado: ");
                     Utilerias.printArray(array);
                     break;
                 case 5:
-                    Quick.QuickSort(array, 0, array.length-1);
+                    System.out.println("Operaciones realizadas: "+Quick.QuickSort(array, 0, array.length-1));
                     System.out.println("Arreglo ordenado: ");
                     Utilerias.printArray(array);
                     break;
                 case 6:
-                    Heap.HeapSort(array,array.length);
+                    System.out.println("Operaciones realizadas: "+Heap.HeapSort(array,array.length));
                     System.out.println("Arreglo ordenado: ");
                     Utilerias.printArray(array);
                     break;
                 case 7:
-                    Merge.sort(array,0,array.length-1);
+                    System.out.println("Operaciones realizadas: "+Merge.sort(array,0,array.length-1));
                     System.out.println("Arreglo ordenado: ");
                     Utilerias.printArray(array);
                     break;
                 case 8:
-
+                    System.out.println("Operaciones realizadas: ");
                     System.out.println("Arreglo ordenado: ");
                     Utilerias.printArray(array);
                     break;

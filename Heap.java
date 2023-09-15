@@ -2,40 +2,55 @@ public class Heap{
 
     static int heapSize;
 
-    public static void Heapify(int arr[],int i,int size){
+    public static int Heapify(int arr[],int i,int size){
+
         int l = 2 * i + 1;
         int r = 2 * i + 2;
         int largest;
 
-        if(l <= heapSize && arr[l] > arr[i])
-            largest = l;
-        else
-            largest = i;
-        if(r <= heapSize && arr[r] > arr[largest])
-            largest = r;
+        int cnt=3;
 
-        if(largest != i){
-            Utilerias.swap(arr,i,largest);
-            Heapify(arr, largest,size);
+        if(l <= heapSize && arr[l] > arr[i]){
+            largest = l;
+            cnt+=2;
         }
+        else{
+            largest = i;
+            cnt++;
+        }
+        if(r <= heapSize && arr[r] > arr[largest]){
+            largest = r;
+            cnt+=2;
+        }
+        if(largest != i){
+            cnt+=Utilerias.swap(arr,i,largest);
+            cnt+=Heapify(arr, largest,size);
+            cnt++;
+        }
+        return cnt;
     }
     
-    public static void BuildHeap(int arr[],int size){
+    public static int BuildHeap(int arr[],int size){
         heapSize = size - 1;
         int i;
+        int cnt=2;
         for(i = (size - 1) / 2; i >= 0; i--){
-            Heapify(arr, i,size);
+            cnt+=Heapify(arr, i,size);
         }
+        return cnt;
     }
     
-    public static void HeapSort(int arr[],int size){
-        BuildHeap(arr,size);
+    public static int HeapSort(int arr[],int size){
+        int cnt=BuildHeap(arr,size);
         int i;
+        cnt++;
         for(i=size-1;i>0;i--){
-            Utilerias.swap(arr,0,heapSize);
+            cnt+=Utilerias.swap(arr,0,heapSize);
             heapSize--;
-            Heapify(arr,0,size);
+            cnt+=Heapify(arr,0,size);
+            cnt++;
         }
+        return cnt;
     }
 }
 

@@ -7,9 +7,10 @@ public class Utilerias {
         System.out.println();
     }
 
-    public static void swap(int arr[], int i, int j){
+    public static int swap(int arr[], int i, int j){
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
     }
+    return 3;
 }

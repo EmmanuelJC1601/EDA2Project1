@@ -1,5 +1,7 @@
 public class Merge{
 
+    static long contM=0L;
+
     public static long merge(int arr[], int l, int m, int r) 
     { 
         int n1 = m - l + 1; 
@@ -8,7 +10,7 @@ public class Merge{
         int L[] = new int [n1]; 
         int R[] = new int [n2];
         long contM=4L; 
-        contM=4;
+
         for (int i=0; i<n1; ++i) {
             L[i] = arr[l + i]; 
             contM++;
@@ -25,11 +27,12 @@ public class Merge{
 
         while (i < n1 && j < n2) 
         { 
+            contM+=2;
             if (L[i] <= R[j]) 
             { 
                 arr[k] = L[i]; 
                 i++; 
-                contM+=3;
+                contM+=2;
             } 
             else
             { 
@@ -38,21 +41,20 @@ public class Merge{
                 contM+=2;
             } 
             k++; 
-            contM+=2;
         } 
   
         while (i < n1) { 
             arr[k] = L[i]; 
             i++; 
             k++; 
-            contM+=4;
+            contM+=3;
         } 
   
         while (j < n2) { 
             arr[k] = R[j]; 
             j++; 
             k++; 
-            contM+=4;
+            contM+=3;
         } 
         return contM;
 

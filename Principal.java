@@ -1,14 +1,14 @@
 import java.util.Scanner;
-import java.util.Random;
+//import java.util.Random;
 
 public class Principal {
     
     public static void main(String args[]){
         
         Scanner input = new Scanner(System.in);
-        Random random = new Random();
+        //Random random = new Random();
         int opcion;
-        int operaciones;
+        //int operaciones;
         
         System.out.println("\t------Bienvenido-----\n"
         +"Se llenar\u00e1 un arreglo del tama\u00f1o dado con valores aleatorios.");

@@ -26,7 +26,7 @@ public class Principal {
             //+"\t1.Llenar un nuevo arreglo con valores aleatorios.\n"
             +"\t1.Usar InsertionSort.\n\t2.Usar SelectionSort.\n"
             +"\t3.Usar BubbleSort.\n\t4.Usar QuickSort.\n\t5.Usar HeapSort.\n"
-            +"\t6.Usar MergeSort.\n\t7.Usar otro.\n\t8.Salir.");
+            +"\t6.Usar MergeSort.\n\t7.Usar Shell.\n\t8.Salir.");
             opcion=input.nextInt();
 
             switch(opcion){
@@ -61,7 +61,7 @@ public class Principal {
                     //Utilerias.printArray(array);
                     break;
                 case 7:
-                    System.out.println("Operaciones realizadas: ");
+                    System.out.println("Operaciones realizadas: "+Shell.shellSort(array));
                     //System.out.println("Arreglo ordenado: ");
                     //Utilerias.printArray(array);
                     break;

@@ -1,6 +1,6 @@
 public class Merge{
 
-    static long contM=0L;
+    //static long contM=0L;
 
     public static long merge(int arr[], int l, int m, int r) 
     { 

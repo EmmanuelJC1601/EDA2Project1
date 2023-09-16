@@ -6,7 +6,7 @@ public class Utilerias {
         Random random = new Random();
         for(int i=0;i<size;i++)
             array[i]= random.nextInt(10001);
-        System.out.println("\n--- Arreglo generado exitósamente ---");
+        System.out.println("\n--- Arreglo generado exit\u00f3samente ---");
     }
     
     public static void printArray(int arr[]){

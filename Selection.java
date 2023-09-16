@@ -2,7 +2,7 @@ public class Selection {
    
     public static long selectionSort(int[] arr){  
 
-        long contS=0L;
+        long contS=1L;
         int n = arr.length;
         for (int i = 0; i < n - 1; i++){  
             int min = i;  

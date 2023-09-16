@@ -10,7 +10,7 @@ public class Insertion{
             while ( (i > -1) && ( array [i] > key ) ) {  
                 array [i+1] = array [i];  
                 i--;  
-                cnt+=2;
+                cnt+=3;
             }  
             array[i+1] = key;  
             cnt++;

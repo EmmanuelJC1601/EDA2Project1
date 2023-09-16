@@ -46,9 +46,9 @@ public class Principal {
                     //Utilerias.printArray(array);
                     break;
                 case 4:
-                    System.out.println("Operaciones realizadas: "+Quick.QuickSort(array, 0, array.length-1,0));
-                    System.out.println("Arreglo ordenado: ");
-                    Utilerias.printArray(array);
+                    System.out.println("Operaciones realizadas: "+Quick.QuickSort(array, 0, array.length-1));
+                    //System.out.println("Arreglo ordenado: ");
+                    //Utilerias.printArray(array);
                     break;
                 case 5:
                     System.out.println("Operaciones realizadas: "+Heap.HeapSort(array,array.length));

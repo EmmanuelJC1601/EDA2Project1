@@ -1,5 +1,7 @@
 public class Merge{
     
+    long contM=3L;
+
     public static void merge(int arr[], int l, int m, int r) 
     { 
         int n1 = m - l + 1; 
@@ -52,6 +54,9 @@ public class Merge{
             sort(arr , m+1, r); 
   
             merge(arr, l, m, r); 
-        } 
+        }
+        
+        //return contM;
     }
+
 }

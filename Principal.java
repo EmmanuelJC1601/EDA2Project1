@@ -42,7 +42,7 @@ public class Principal {
                     //Utilerias.printArray(array);
                     break;
                 case 3:
-                    //System.out.println("Operaciones realizadas: "+Selection.selectionSort(array));
+                    System.out.println("Operaciones realizadas: "+Selection.selectionSort(array));
                     //System.out.println("Arreglo ordenado: ");
                     //Utilerias.printArray(array);
                     break;

@@ -1,4 +1,13 @@
+import java.util.Random;
+
 public class Utilerias {
+
+    public static void llenar(int array[], int size){
+        Random random = new Random();
+        for(int i=0;i<size;i++)
+            array[i]= random.nextInt(10001);
+        System.out.println("\n--- Arreglo generado exitósamente ---");
+    }
     
     public static void printArray(int arr[]){
         int n = arr.length;

@@ -47,8 +47,8 @@ public class Principal {
                     break;
                 case 4:
                     System.out.println("Operaciones realizadas: "+Quick.QuickSort(array, 0, array.length-1));
-                    System.out.println("Arreglo ordenado: ");
-                    Utilerias.printArray(array);
+                    //System.out.println("Arreglo ordenado: ");
+                    //Utilerias.printArray(array);
                     break;
                 case 5:
                     System.out.println("Operaciones realizadas: "+Heap.HeapSort(array,array.length));
@@ -57,8 +57,8 @@ public class Principal {
                     break;
                 case 6:
                     System.out.println("Operaciones realizadas: "+Merge.sort(array,0,array.length-1));
-                    System.out.println("Arreglo ordenado: ");
-                    Utilerias.printArray(array);
+                    //System.out.println("Arreglo ordenado: ");
+                    //Utilerias.printArray(array);
                     break;
                 case 7:
                     System.out.println("Operaciones realizadas: ");

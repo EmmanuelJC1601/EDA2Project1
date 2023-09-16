@@ -36,7 +36,7 @@ public class Principal {
                     //Utilerias.printArray(array);
                     break;
                 case 2:
-                    //System.out.println("Operaciones realizadas: "+Selection.selectionSort(array));
+                    System.out.println("Operaciones realizadas: "+Selection.selectionSort(array));
                     //System.out.println("Arreglo ordenado: ");
                     //Utilerias.printArray(array);
                     break;
@@ -56,7 +56,7 @@ public class Principal {
                     //Utilerias.printArray(array);
                     break;
                 case 6:
-                    //System.out.println("Operaciones realizadas: "+Merge.sort(array,0,array.length-1));
+                    System.out.println("Operaciones realizadas: "+Merge.sort(array,0,array.length-1));
                     //System.out.println("Arreglo ordenado: ");
                     //Utilerias.printArray(array);
                     break;
@@ -71,6 +71,6 @@ public class Principal {
                     System.out.println("Opcion Invalida.");
                     break;
             }
-        }while(opcion!=9);
+        }while(opcion!=8);
     }  
 }

@@ -1,3 +1,10 @@
+/**
+ * 
+ * @author Jiménez Córdova Emmanuel
+ * @author Meneses Calderas Grecia Irais
+ * @author Ruiz Cervantes Karla Patricia
+ */
+
 import java.util.Random;
 
 public class Utilerias {

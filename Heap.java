@@ -1,3 +1,11 @@
+/**
+ * 
+ * @author Jiménez Córdova Emmanuel
+ * @author Meneses Calderas Grecia Irais
+ * @author Ruiz Cervantes Karla Patricia
+ */
+
+
 public class Heap{
 
     static int heapSize;

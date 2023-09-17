@@ -1,3 +1,10 @@
+/**
+ * 
+ * @author Jiménez Córdova Emmanuel
+ * @author Meneses Calderas Grecia Irais
+ * @author Ruiz Cervantes Karla Patricia
+ */
+
 public class Shell{
     public static long shellSort(int arr[]){
         long cnt=0L;

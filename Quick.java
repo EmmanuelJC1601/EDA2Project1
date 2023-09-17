@@ -1,3 +1,10 @@
+/**
+ * 
+ * @author Jiménez Córdova Emmanuel
+ * @author Meneses Calderas Grecia Irais
+ * @author Ruiz Cervantes Karla Patricia
+ */
+
 public class Quick{
 
     public static long QuickSort(int arr[], int low, int high){

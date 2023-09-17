@@ -1,3 +1,10 @@
+/**
+ * 
+ * @author Jiménez Córdova Emmanuel
+ * @author Meneses Calderas Grecia Irais
+ * @author Ruiz Cervantes Karla Patricia
+ */
+
 public class BubbleVer {
     public static long BubbleSortVer(int arr[]){
         long cnt=0L;

@@ -1,3 +1,10 @@
+/**
+ * 
+ * @author Jiménez Córdova Emmanuel
+ * @author Meneses Calderas Grecia Irais
+ * @author Ruiz Cervantes Karla Patricia
+ */
+
 public class Insertion{  
     
     public static long insertionSort(int array[]) {  

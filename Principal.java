@@ -25,8 +25,8 @@ public class Principal {
             System.out.println("\n\nQue algoritmo desea utilizar?\n"
             //+"\t1.Llenar un nuevo arreglo con valores aleatorios.\n"
             +"\t1. Usar InsertionSort.\n\t2. Usar SelectionSort.\n"
-            +"\t3. Usar BubbleSort.\n\t4. Usar QuickSort.\n\t5. Usar HeapSort.\n"
-            +"\t6. Usar MergeSort.\n\t7. Usar Shell.\n\t8. Salir.");
+            +"\t3. Usar BubbleSort.\n\t4. Usar BubbleSort Optimizado.\n\t5. Usar QuickSort.\n\t6. Usar HeapSort.\n"
+            +"\t7. Usar MergeSort.\n\t8. Usar Shell.\n\t9. Salir.");
             opcion=input.nextInt();
 
             switch(opcion){
@@ -46,31 +46,37 @@ public class Principal {
                     //Utilerias.printArray(array);
                     break;
                 case 4:
-                    System.out.println("\nOperaciones realizadas: "+Quick.QuickSort(array, 0, array.length-1));
+                    System.out.println("\nOperaciones realizadas: "+BubbleVer.BubbleSortVer(array));
                     //System.out.println("Arreglo ordenado: ");
                     //Utilerias.printArray(array);
                     break;
                 case 5:
-                    System.out.println("\nOperaciones realizadas: "+Heap.HeapSort(array,array.length));
+                    System.out.println("\nOperaciones realizadas: "+Quick.QuickSort(array, 0, array.length-1));
                     //System.out.println("Arreglo ordenado: ");
                     //Utilerias.printArray(array);
                     break;
                 case 6:
-                    System.out.println("\nOperaciones realizadas: "+Merge.sort(array,0,array.length-1));
+                    System.out.println("\nOperaciones realizadas: "+Heap.HeapSort(array,array.length));
                     //System.out.println("Arreglo ordenado: ");
                     //Utilerias.printArray(array);
                     break;
                 case 7:
-                    System.out.println("\nOperaciones realizadas: "+Shell.shellSort(array));
+                    System.out.println("\nOperaciones realizadas: "+Merge.sort(array,0,array.length-1));
                     //System.out.println("Arreglo ordenado: ");
                     //Utilerias.printArray(array);
                     break;
                 case 8:
+                    System.out.println("\nOperaciones realizadas: "+Shell.shellSort(array));
+                    //System.out.println("Arreglo ordenado: ");
+                    //Utilerias.printArray(array);
+                    break;
+                case 9:
+                    System.out.println("\n\tHasta luego !");
                     break;
                 default:
                     System.out.println("Opcion Invalida.");
                     break;
             }
-        }while(opcion!=8);
+        }while(opcion!=9);
     }  
 }

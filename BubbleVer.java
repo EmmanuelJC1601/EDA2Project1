@@ -1,11 +1,25 @@
 /**
+ * Esta clase realiza la implementación del algoritmo de ordenamiento BubbleSort
+ * pero con la verificación cuando ya está ordenado
  * 
  * @author Jiménez Córdova Emmanuel
  * @author Meneses Calderas Grecia Irais
  * @author Ruiz Cervantes Karla Patricia
+ * 
+ * Last modification: 17-09-2023
  */
 
 public class BubbleVer {
+/**
+ * Este método de tipo long ordena un arrego recibido por medio del algoritmo BubbleSort 
+ * optimizado para que pare su ejecución una vez ordenado y regresa el número de 
+ * operaciones necesarias para realizar el ordenamiento.
+ * 
+ * @author Jiménez Córdova Emmanuel
+ * @param arr[] arreglo que va a ordenar
+ * @return número de operaciones realizadas
+ */
+
     public static long BubbleSortVer(int arr[]){
         long cnt=0L;
         int i;

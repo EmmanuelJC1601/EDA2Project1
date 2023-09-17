@@ -1,13 +1,26 @@
 /**
+ * Esta clase realiza la implementación del algoritmo de ordenamiento MergeSort
  * 
  * @author Jiménez Córdova Emmanuel
  * @author Meneses Calderas Grecia Irais
  * @author Ruiz Cervantes Karla Patricia
+ * 
+ * Last modification: 17-09-2023
  */
 
 public class Merge{
-
-    //static long contM=0L;
+/**
+ * Este método de tipo long ordena  un arrego recibido por medio de 
+ * intercalación con el algoritmo MergeSort y regresa el número de 
+ * operaciones necesarias para realizar el ordenamiento.
+ * 
+ * @author Meneses Calderas Grecia Irais
+ * @param arr[] arreglo que va a ordenar
+ * @param l índice inicial de la parte del arreglo a ordenar
+ * @param m índice medio de la parte del arreglo a ordenar
+ * @param r índice final de la parte del arreglo a ordenar
+ * @return número de operaciones realizadas
+ */
 
     public static long merge(int arr[], int l, int m, int r) 
     { 
@@ -66,7 +79,17 @@ public class Merge{
         return contM;
 
     } 
-  
+
+/**
+ * Este método de tipo long indica la división y regresa el número de 
+ * operaciones necesarias para realizar el ordenamiento.
+ * 
+ * @author Meneses Calderas Grecia Irais
+ * @param arr[] arreglo que va a ordenar
+ * @param l índice inicial del arreglo a ordenar
+ * @param r índice final del arreglo a ordenar
+ * @return número de operaciones realizadas
+ */
     public static long sort(int arr[], int l, int r) { 
         long contM=0L;
         if (l < r) { 

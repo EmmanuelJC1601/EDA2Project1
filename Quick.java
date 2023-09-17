@@ -1,12 +1,25 @@
 /**
+ * Esta clase realiza la implementación del algoritmo de ordenamiento QuickSort
  * 
  * @author Jiménez Córdova Emmanuel
  * @author Meneses Calderas Grecia Irais
  * @author Ruiz Cervantes Karla Patricia
+ * 
+ * Last modification: 17-09-2023
  */
 
 public class Quick{
-
+/**
+ * Este método de tipo long ordena por medio del algoritmo QuickSort
+ * un arrego recibido y regresa el número de operaciones necesarias 
+ * para realizar el ordenamiento.
+ * 
+ * @author Ruiz Cervantes Karla Patricia
+ * @param arr[] arreglo que va a ordenar
+ * @param low inicio de donde ordenara
+ * @param high hasta donde se ordena
+ * @return número de operaciones realizadas
+ */
     public static long QuickSort(int arr[], int low, int high){
 
         long count = 0L;

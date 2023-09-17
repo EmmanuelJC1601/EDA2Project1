@@ -1,14 +1,28 @@
 /**
+ * Esta clase realiza la implementación del algoritmo de ordenamiento HeapSort
  * 
  * @author Jiménez Córdova Emmanuel
  * @author Meneses Calderas Grecia Irais
  * @author Ruiz Cervantes Karla Patricia
+ * 
+ * Last modification: 17-09-2023
  */
 
 
 public class Heap{
 
     static int heapSize;
+
+/**
+ * Este método de tipo long verifica que la estrucutra Heap mantenga su integridad
+ * y regresa el número de operaciones necesarias para realizar el ordenamiento.
+ * 
+ * @author Jiménez Córdova Emmanuel
+ * @param arr[] arreglo que va a ordenar
+ * @param i índice nodo padre
+ * @param size tamaño del heap/arreglo
+ * @return número de operaciones realizadas
+ */
 
     public static long Heapify(int arr[],int i,int size){
 
@@ -37,7 +51,15 @@ public class Heap{
         }
         return cnt;
     }
-    
+/**
+ * Este método de tipo long crea el primer Heap de un arreglo dado
+ * y regresa el número de operaciones necesarias para realizar el ordenamiento.
+ * 
+ * @author Jiménez Córdova Emmanuel
+ * @param arr[] arreglo que va a ordenar
+ * @param size tamaño del heap/arreglo
+ * @return número de operaciones realizadas
+ */
     public static long BuildHeap(int arr[],int size){
         heapSize = size - 1;
         int i;
@@ -47,7 +69,17 @@ public class Heap{
         }
         return cnt;
     }
-    
+/**
+ * Este método de tipo long ordena por medio del algoritmo HeapSort
+ * un arrego recibido y regresa el número de operaciones necesarias 
+ * para realizar el ordenamiento.
+ * 
+ * @author Meneses Calderas Grecia Irais
+ * @param array[] arreglo que va a ordenar
+ * @param size tamaño del heap/arreglo
+ * @return número de operaciones realizadas
+ */
+
     public static long HeapSort(int arr[],int size){
         long cnt=BuildHeap(arr,size);
         int i;
@@ -61,48 +93,3 @@ public class Heap{
         return cnt;
     }
 }
-
-/*
-void HeapSort(int* A, int size){
-	BuildHeap(A,size);
-  	int i;
-  	for(i = size - 1; i > 0; i--){
-    	swap(&A[0],&A[heapSize]);      
-      	heapSize--;
-      	printf("Iteracion HS: \n");
-  		printArray(A,size);
-		Heapify(A, 0,size);
-   }
-}
-
-int heapSize;
-
-void Heapify(int* A, int i, int size)
-{
-	int l = 2 * i + 1;
-	int r = 2 * i + 2;
-	int largest;
-
-	if(l <= heapSize && A[l] > A[i])
-    	largest = l;
-  	else
-    	largest = i;
-  	if(r <= heapSize && A[r] > A[largest])
-    	largest = r;
-  	if(largest != i){
-    	swap(&A[i],&A[largest]);
-    	printArray(A,size);
-    	Heapify(A, largest,size);
-     }
-      
-}
-
-void BuildHeap(int* A, int size){
-	heapSize = size - 1;
-  	int i;
-  	for(i = (size - 1) / 2; i >= 0; i--){
-		Heapify(A, i,size);
-  	}
-	printf("Termin%c de construir el HEAP \n",162);
-}
-*/

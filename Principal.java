@@ -1,18 +1,31 @@
 /**
- * Esta es la clase Principal, que consiste en un menú
- * donde se llaman a los métodos de cada algoritmo de ordenamiento
+ * Esta clase realiza la ejecución del método main y llamada de
+ * todos los algoritmos de ordenamiento. 
  * 
  * @author Jiménez Córdova Emmanuel
  * @author Meneses Calderas Grecia Irais
  * @author Ruiz Cervantes Karla Patricia
+ * 
+ * Last modification: 17-09-2023
  */
 
 
 import java.util.Scanner;
-//import java.util.Random;
 
 public class Principal {
-    
+/**
+ * Este método de tipo long ordena por medio del algoritmo QuickSort
+ * un arrego recibido y regresa el número de operaciones necesarias 
+ * para realizar el ordenamiento.
+ * 
+ * @author Jiménez Córdova Emmanuel
+ * @author Meneses Calderas Grecia Irais
+ * @author Ruiz Cervantes Karla Patricia
+ * 
+ * @param args[] arreglo que guarda los parámetros recibidos por línea de comandos
+ * 
+ */
+
     public static void main(String args[]){
         
         Scanner input = new Scanner(System.in);

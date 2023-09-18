@@ -15,7 +15,7 @@ public class BubbleVer {
  * optimizado para que pare su ejecución una vez ordenado y regresa el número de 
  * operaciones necesarias para realizar el ordenamiento.
  * 
- * @author Jiménez Córdova Emmanuel
+ * @author Meneses Calderas Grecia Irais
  * @param arr[] arreglo que va a ordenar
  * @return número de operaciones realizadas
  */
